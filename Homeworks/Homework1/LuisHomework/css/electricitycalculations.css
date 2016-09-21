@@ -1,0 +1,41 @@
+body
+{
+	background-color: #609020;
+	font-family: Times New Roman;
+}
+
+div
+{
+	background-color: white;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+table
+{
+    background-color:#fa8072;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+table tr td
+{
+    padding: 5px;
+}
+
+table tr th
+{
+    padding-left: 8px;
+}
+
+h1
+{
+	text-align: center;
+}
+
+figure
+{
+	text-align: center;
+}
+}
