@@ -1,3 +1,6 @@
+<h1>Diabetes Management</h1>
+<h3>Chris and Luis</h3>
+
 This is our Balsamiq Storyboard. We are doing Diabetes Management. So in a rough draft of the project we have come up with a
 storyboard that will at least give a rough image about how our site will look like on a mobile site. First we have out login page in 
 which any user can enter there username and password to login to there own personal profile. In this profile page they will have
