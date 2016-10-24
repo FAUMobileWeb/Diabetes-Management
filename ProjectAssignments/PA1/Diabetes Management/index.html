@@ -1,31 +1,53 @@
 <html>
-<head>
-<link rel="stylesheet"
-    href="css/diabetes.css">
-</head>
+    <head>
+        <link rel="stylesheet" href="css/diabetes.css">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    </head>
 
-<header>
-	<img src="media/diabeteslogo.png"
-		  width="75" height="75" align="left">
-		  <h1>Diabetes Management</h1>
-</header><br>
+    <br>
 
-<body>
+    <body>
+        <div data-role="page">
+            <div data-role="header" data-theme="b">
+                <img src="media/diabeteslogo.png" width="30" height="30" class="ui-btn-left">
+            	<h1> Diabetes Management</h1>
+            </div>
 
-<form action="action_page.php">
-  Username:<br>
-  <input type="text" name="firstname" value="John">
-  <br><br>
-  Password:<br>
-  <input type="text" name="lastname" value="Smith"> <a href="#">forgot password?</a>
-  <br><br>
-  <input type="submit" value="Login">
-</form>
+            <div data-role="main" class="ui-content">
+                <form>
+                  Username:
+                  <br>
 
-<footer>Diabetes Management</footer>
+                  <input type="text" name="firstname" value="John">
 
+                  <br>
 
-</body>
+                  Password:
+
+                  <br>
+
+                  <input type="text" name="lastname" value="Smith">
+
+                  <a href="#">Forgot password?</a>
+
+                  <br>
+                  <br>
+
+                  <input type="submit" value="Login">
+                  <a href="types.html">Temp link to next page</a>
+              </form>
+            </div>
+          <div data-role="footer" data-theme="b">
+              <h1></h1>
+          </div>
+        </div>
+
+        <!-- Include the jQuery library -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Include the jQuery Mobile library -->
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
 </html>
 
 
