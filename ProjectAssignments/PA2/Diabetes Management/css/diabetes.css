@@ -3,21 +3,6 @@ body
 	font-family: comic sans ms;
 }
 
-header {
-    padding: 1em;
-    color: white;
-    background-color: gold;
-    clear: left;
-    text-align: left;
-}
-
-footer {
-	padding: 1em;
-	color: black;
-	background-color: gold;
-	text-align: center;
-}
-
 nav {
     float: left;
     max-width: 160px;
@@ -40,4 +25,13 @@ img {
 
 h1{
 	text-align="left";
+}
+
+.ui-page {
+    background: black !important;
+	color: #FFD700 !important;
+}
+
+.ui-page .ui-header, .ui-page .ui-footer{
+    background: #FFD700 !important;
 }

@@ -42,18 +42,36 @@ function removeItem(listValue, listName) {
     localStorage[listName] = JSON.stringify(list);
 }
 
-function replaceItem(taskName, newListValue, listName) {
+function replaceItem(unique, newListValue, listName) {
+    var test = localStorage.getItem(listName);
+
+    debugger;
+
+    if(test == '')
+    {
+        storeItem(newListValue, listName);
+        return;
+    }
+
     var list = JSON.parse(localStorage.getItem(listName));
 
     var i;
 
     for(i = 0; i < list.items.length; i++)
     {
-        if(list.items[i].tname == taskName)
+        if(list.items[i].loggedUser == newListValue.loggedUser)
         {
-            list.items[i].tvalue = newListValue;
+            list.items[i] = newListValue;
             break;
         }
+    }
+
+    debugger;
+
+    if(i == list.items.length)
+    {
+        storeItem(newListValue, listName);
+        return;
     }
 
     localStorage[listName] = JSON.stringify(list);

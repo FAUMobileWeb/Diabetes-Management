@@ -10,21 +10,64 @@
 
     <body>
         <div data-role="page">
-            <div data-role="header" data-theme="b">
+            <div data-role="header">
                 <img src="media/diabeteslogo.png" width="30" height="30" class="ui-btn-left">
             	<h1>Profile</h1>
             </div>
 
             <div data-role="main" class="ui-content">
                 <a href="home.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">Back to Home</a>
+
+                <form id="profileForm" method="post" action="profile.html">
+                  <h3>My Profile </h3>
+
+                  <br>
+
+                  First Name:
+                  <br>
+
+                  <input type="text" name="firstName" id="firstName">
+
+                  <br>
+
+                  Last Name:
+                  <br>
+
+                  <input type="text" name="lastName" id="lastName">
+
+                  <br>
+
+                  Age:
+                  <br>
+
+                  <input type="number" name="age" id="age" min="1" max="150">
+
+                  <br>
+
+                  Type of Diabetes:
+                  <br>
+
+                  <select id="dtype" name="diabetesType">
+                     <option value="1">Type 1 Diabetes</option>
+                     <option value="2">Type 2 Diabetes</option>
+                     <option value="G">Gestational Diabetes</option>
+                    </select>
+
+                <br>
+
+                <input id="edit" type="submit" value="Submit">
+              </form>
             </div>
-          <div data-role="footer" data-theme="b">
+          <div data-role="footer">
               <h1></h1>
           </div>
         </div>
 
         <!-- Include the jQuery library -->
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <script src="js/lsutility.js"></script>
+        <script src="js/profile.js"></script>
 
         <!-- Include the jQuery Mobile library -->
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>

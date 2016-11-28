@@ -3,10 +3,6 @@ $(function () {
     var site = {
         /*Hides the validation message, binds event handlers to events, and loads, if any, input information from localStorage*/
         init: function (){
-            var username = localStorage.getItem('loggedUser');
-
-            $('#greeting').text('Hello ' + username + '!');
-
             this.eventBind();
         },
 
@@ -19,7 +15,7 @@ $(function () {
         onLogOut: function(e) {
             localStorage.setItem('loggedUser', '');
 
-            window.location = 'index.html';
+            window.location = "index.html";
         }
     };
 
