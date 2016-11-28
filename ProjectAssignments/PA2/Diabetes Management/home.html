@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/diabetes.css">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    </head>
+
+    <br>
+
+    <body>
+        <div data-role="page">
+            <div data-role="header" data-theme="b">
+                <img src="media/diabeteslogo.png" width="30" height="30" class="ui-btn-left">
+            	<h1>Home</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <h1>Hello User!</h1>
+
+                <div class="ui-grid-a ui-responsive">
+                  <div class="ui-block-a">
+                    <a href="journal.html" class="ui-btn ui-icon-edit ui-btn-icon-top ui-corner-all ui-shadow">Food Journal</a><br>
+                  </div>
+                  <div class="ui-block-b">
+                    <a href="weight.html" class="ui-btn ui-icon-arrow-d ui-btn-icon-top ui-corner-all ui-shadow">Weight</a><br>
+                  </div>
+                </div>
+                <div class="ui-grid-a ui-responsive">
+                  <div class="ui-block-a">
+                    <a href="dosdonts.html" class="ui-btn ui-icon-delete ui-btn-icon-top ui-corner-all ui-shadow">Cans and Can'ts</a><br>
+                  </div>
+                  <div class="ui-block-b">
+                    <a href="types.html" class="ui-btn ui-icon-bullets ui-btn-icon-top ui-corner-all ui-shadow">Types of Diabetes</a><br>
+                  </div>
+                </div>
+                <div class="ui-grid-a ui-responsive">
+                  <div class="ui-block-a">
+                      <a href="profile.html" class="ui-btn ui-icon-user ui-btn-icon-top ui-corner-all ui-shadow">Profile</a><br>
+                  </div>
+                  <div id="logout" class="ui-block-b">
+                      <a href="#" class="ui-btn ui-icon-forward ui-btn-icon-top ui-corner-all ui-shadow">Log Out</a><br>
+                  </div>
+                </div>
+
+            </div>
+          <div data-role="footer" data-theme="b">
+              <h1></h1>
+          </div>
+        </div>
+
+        <!-- Include the jQuery library -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/home.js"></script>
+
+        <!-- Include the jQuery Mobile library -->
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>

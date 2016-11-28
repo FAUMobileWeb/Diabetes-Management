@@ -1,0 +1,43 @@
+body
+{
+	font-family: comic sans ms;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: gold;
+    clear: left;
+    text-align: left;
+}
+
+footer {
+	padding: 1em;
+	color: black;
+	background-color: gold;
+	text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+img {
+    float: left;
+}
+
+h1{
+	text-align="left";
+}
