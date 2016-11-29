@@ -18,19 +18,22 @@
             <div data-role="main" class="ui-content">
                 <a href="home.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">Back to Home</a>
 
-                <a href="#" class="ui-btn ui-icon-forward ui-btn-icon-top ui-corner-all ui-shadow">See Weight Progress</a><br>
-
                 <div data-role="main" class="ui-content">
-                    <form id="loginForm" method="post" action="home.html">
+                    <h3>Weight History</h3>
+
+                    <div id="history">
+                    </div>
+
+                    <form id="weightForm" method="post" action="home.html">
                       <h3>Current Weight (in lbs): </h3>
                       <br>
 
-                      <input type="range" name="username" id="username" value="100" min = "0" max = "500" data-highlight="true">
+                      <input type="range" name="weight" id="weight" value="100" min = "0" max = "500" data-highlight="true">
 
                       <br>
                       <br>
 
-                      <input type="submit" value="Submit">
+                      <input id="submit" type="submit" value="Submit">
                   </form>
                 </div>
             </div>
@@ -41,6 +44,8 @@
 
         <!-- Include the jQuery library -->
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/weight.js"></script>
+        <script src="js/lsutility.js"></script>
 
         <!-- Include the jQuery Mobile library -->
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
