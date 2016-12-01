@@ -35,16 +35,19 @@ $(function () {
         },
 
         load: function() {
-            var list = JSON.parse(localStorage.getItem('weightHistory'));
-
-            var i;
-
-            for(i = list.items.length; i--; i < 0)
+			if(localStorage.getItem("weightHistory"))
             {
-                if(list.items[i].user == localStorage.getItem('loggedUser'))
-                {
-                    $('#history').append('<p>Your weight on ' + list.items[i].date + ' was ' + list.items[i].weight + ' lbs.</p>');
-                }
+                var list = JSON.parse(localStorage.getItem('weightHistory'));
+
+				var i;
+
+				for(i = list.items.length; i--; i < 0)
+				{
+					if(list.items[i].user == localStorage.getItem('loggedUser'))
+					{
+						$('#history').append('<p>Your weight on ' + list.items[i].date + ' was ' + list.items[i].weight + ' lbs.</p>');
+					}
+				}
             }
         }
     };
