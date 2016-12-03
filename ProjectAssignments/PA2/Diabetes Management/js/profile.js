@@ -1,6 +1,7 @@
 $(function () {
     var site = {
         init: function (){
+<<<<<<< HEAD
             if(localStorage.getItem('profiles') && localStorage.getItem('profiles') != '')
             {
                 var list = JSON.parse(localStorage.getItem('profiles'));
@@ -19,6 +20,26 @@ $(function () {
                 $('#lastName').val(list.items[i].lastName);
                 $('#age').val(list.items[i].age);
                 $('#dtype').val(list.items[i].dtype);
+=======
+			if(localStorage.getItem('profiles'))
+            {
+                var list = JSON.parse(localStorage.getItem('profiles'));
+
+				var i;
+
+				for(i = 0; i < list.items.length; i++)
+				{
+					if(list.items[i].loggedUser == localStorage.getItem('loggedUser'))
+					{
+						break;
+					}
+				}
+
+				$('#firstName').val(list.items[i].firstName);
+				$('#lastName').val(list.items[i].lastName);
+				$('#age').val(list.items[i].age);
+				$('#dtype').val(list.items[i].dtype);
+>>>>>>> origin/master
             }
 
             this.eventBind();
