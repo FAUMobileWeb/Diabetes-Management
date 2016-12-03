@@ -4,7 +4,10 @@ $(function () {
         /*Hides the validation message, binds event handlers to events, and loads, if any, input information from localStorage*/
         init: function (){
             this.eventBind();
-            this.load();
+            if(localStorage.getItem('weightHistory') && localStorage.getItem('weightHistory') != '')
+            {
+                this.load();
+            }
         },
 
         /*Binds event handlers to events*/

@@ -1,24 +1,25 @@
-/*Events and event handlers for site*/
 $(function () {
     var site = {
-        /*Hides the validation message, binds event handlers to events, and loads, if any, input information from localStorage*/
         init: function (){
-            var list = JSON.parse(localStorage.getItem('profiles'));
-
-            var i;
-
-            for(i = 0; i < list.items.length; i++)
+            if(localStorage.getItem('profiles') && localStorage.getItem('profiles') != '')
             {
-                if(list.items[i].loggedUser == localStorage.getItem('loggedUser'))
-                {
-                    break;
-                }
-            }
+                var list = JSON.parse(localStorage.getItem('profiles'));
 
-            $('#firstName').val(list.items[i].firstName);
-            $('#lastName').val(list.items[i].lastName);
-            $('#age').val(list.items[i].age);
-            $('#dtype').val(list.items[i].dtype);
+                var i;
+
+                for(i = 0; i < list.items.length; i++)
+                {
+                    if(list.items[i].loggedUser == localStorage.getItem('loggedUser'))
+                    {
+                        break;
+                    }
+                }
+
+                $('#firstName').val(list.items[i].firstName);
+                $('#lastName').val(list.items[i].lastName);
+                $('#age').val(list.items[i].age);
+                $('#dtype').val(list.items[i].dtype);
+            }
 
             this.eventBind();
         },
@@ -49,11 +50,9 @@ $(function () {
                 localStorage.setItem('profiles', '');
             }
 
-            debugger;
-
             replaceItem(lU, profile, 'profiles');
 
-            location.reload(); 
+            location.reload();
         }
     };
 
