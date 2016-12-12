@@ -1,7 +1,6 @@
 $(function () {
     var site = {
-        init: function (){
-<<<<<<< HEAD
+        init: function () {
             if(localStorage.getItem('profiles') && localStorage.getItem('profiles') != '')
             {
                 var list = JSON.parse(localStorage.getItem('profiles'));
@@ -20,7 +19,8 @@ $(function () {
                 $('#lastName').val(list.items[i].lastName);
                 $('#age').val(list.items[i].age);
                 $('#dtype').val(list.items[i].dtype);
-=======
+            }
+
 			if(localStorage.getItem('profiles'))
             {
                 var list = JSON.parse(localStorage.getItem('profiles'));
@@ -39,7 +39,6 @@ $(function () {
 				$('#lastName').val(list.items[i].lastName);
 				$('#age').val(list.items[i].age);
 				$('#dtype').val(list.items[i].dtype);
->>>>>>> origin/master
             }
 
             this.eventBind();

@@ -17,6 +17,35 @@
 
             <div data-role="main" class="ui-content">
                 <a href="home.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">Back to Home</a>
+
+                <div data-role="main" class="ui-content">
+                    <h3>Food History</h3>
+
+                    <div id="history">
+                    </div>
+
+                    <form id="foodForm" method="post" action="journal.html">
+                      <h3>Food Entry: </h3>
+
+                      <br>
+
+                      <input type="text" name="foodItem" id="foodItem">
+
+                      <br>
+
+                      <select id="mtype" name="mealType">
+                         <option value="Breakfast">Breakfast</option>
+                         <option value="Lunch">Lunch</option>
+                         <option value="Dinner">Dinner</option>
+                         <option value="Snack">Snack</option>
+                      </select>
+
+                      <br>
+                      <br>
+
+                      <input id="submit" type="submit" value="Submit">
+                  </form>
+                </div>
             </div>
           <div data-role="footer">
               <h1></h1>
@@ -25,6 +54,8 @@
 
         <!-- Include the jQuery library -->
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/journal.js"></script>
+        <script src="js/lsutility.js"></script>
 
         <!-- Include the jQuery Mobile library -->
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
