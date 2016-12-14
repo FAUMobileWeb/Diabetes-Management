@@ -1,0 +1,37 @@
+body
+{
+	font-family: comic sans ms;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+img {
+    float: left;
+}
+
+h1{
+	text-align="left";
+}
+
+.ui-page {
+    background: black !important;
+	color: #FFD700 !important;
+}
+
+.ui-page .ui-header, .ui-page .ui-footer{
+    background: #FFD700 !important;
+}

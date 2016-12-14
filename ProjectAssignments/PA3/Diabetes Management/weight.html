@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/diabetes.css">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    </head>
+
+    <br>
+
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <img src="media/diabeteslogo.png" width="30" height="30" class="ui-btn-left">
+            	<h1>Weight Tracking</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <a href="home.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">Back to Home</a>
+
+                <div data-role="main" class="ui-content">
+                    <h3>Weight History</h3>
+
+                    <div id="history">
+                    </div>
+
+                    <form id="weightForm" method="post" action="weight.html">
+                      <h3>Current Weight (in lbs): </h3>
+                      <br>
+
+                      <input type="range" name="weight" id="weight" value="100" min = "0" max = "500" data-highlight="true">
+
+                      <br>
+                      <br>
+
+                      <input id="submit" type="submit" value="Submit">
+                  </form>
+                </div>
+            </div>
+          <div data-role="footer">
+              <h1></h1>
+          </div>
+        </div>
+
+        <!-- Include the jQuery library -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/weight.js"></script>
+        <script src="js/lsutility.js"></script>
+
+        <!-- Include the jQuery Mobile library -->
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>
